@@ -1,5 +1,13 @@
-function App() {
-  return <div className="App"></div>;
-}
+import { Header } from './Components/Header';
+import { Socials } from './Components/Socials';
+import { Overview } from './Components/Overview';
 
-export default App;
+export const App = () => {
+  return (
+    <div className="App">
+      <Header />
+      <Socials />
+      <Overview />
+    </div>
+  );
+};
