@@ -5,10 +5,14 @@
 }
 
 body {
-  padding: 1.5em;
   font-family: 'Inter', sans-serif;
+}
 
-  /* Dark Theme */
-  background-color: hsl(230, 17%, 14%);
-  color: hsl(228, 34%, 66%);
+.wrapper {
+  padding: 1.5em;
+}
+
+.theme-toggle {
+  width: 30px;
+  height: 30px;
 }
