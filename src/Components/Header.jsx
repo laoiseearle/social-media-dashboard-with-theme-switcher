@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../App';
 
 export const Header = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+  const handleThemeToggle = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
   return (
     <header>
       <div className="header-info">
@@ -10,7 +15,12 @@ export const Header = () => {
 
       <div className="header-theme">
         <h3>Dark Mode</h3>
-        <button className="theme-toggle" />
+        <input
+          className="theme-toggle"
+          type="checkbox"
+          onChange={handleThemeToggle}
+          checked={theme === 'dark'}
+        />
       </div>
     </header>
   );
