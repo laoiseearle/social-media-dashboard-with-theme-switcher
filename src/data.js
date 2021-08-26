@@ -6,7 +6,7 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '12',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-facebook.svg',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '99',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-twitter.svg',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '1099',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-instagram.svg',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const socialSites = [
     subName: 'subscribers',
     dailyChange: '144',
     increasedChange: false,
-    logo: '',
+    logo: './images/icon-youtube.svg',
   },
 ];
 
@@ -44,7 +44,7 @@ export const dailyOverview = [
     count: '87',
     dailyChange: '3%',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-facebook.svg',
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const dailyOverview = [
     count: '52',
     dailyChange: '2%',
     increasedChange: false,
-    logo: '',
+    logo: './images/icon-facebook.svg',
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ export const dailyOverview = [
     count: '5462',
     dailyChange: '2257%',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-instagram.svg',
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ export const dailyOverview = [
     count: '52k',
     dailyChange: '1375%',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-instagram.svg',
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ export const dailyOverview = [
     count: '117',
     dailyChange: '303%',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-twitter.svg',
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ export const dailyOverview = [
     count: '507',
     dailyChange: '553%',
     increasedChange: true,
-    logo: '',
+    logo: './images/icon-twitter.svg',
   },
   {
     id: 7,
@@ -92,7 +92,7 @@ export const dailyOverview = [
     count: '107',
     dailyChange: '19%',
     increasedChange: false,
-    logo: '',
+    logo: './images/icon-youtube.svg',
   },
   {
     id: 8,
@@ -100,6 +100,6 @@ export const dailyOverview = [
     count: '1407',
     dailyChange: '12%',
     increasedChange: false,
-    logo: '',
+    logo: './images/icon-youtube.svg',
   },
 ];
