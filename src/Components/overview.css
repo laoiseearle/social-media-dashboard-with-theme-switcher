@@ -1,0 +1,47 @@
+.overview-header {
+  margin-bottom: 1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.overview-card {
+  height: 125px;
+  border-radius: 0.3em;
+  padding: 1.7em 1.5em 1em 1.5em;
+  margin-bottom: 1.1em;
+  flex-direction: column;
+}
+
+.overview-card,
+.overview-card-top,
+.overview-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-card-top > p {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.overview-card-top > img {
+  width: 20px;
+  height: 20px;
+}
+
+.overview-card-bottom > h2 {
+  font-size: 2em;
+}
+
+.percentage {
+  padding-top: 1em;
+  font-size: 0.7em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.percentage > img {
+  height: 4px;
+  padding-right: 0.3em;
+}
