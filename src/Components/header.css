@@ -25,3 +25,51 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 22px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #aeb3cb;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  right: 4px;
+  bottom: 3px;
+  border-radius: 1em;
+  background-color: #f0f2fa;
+  transition: 0.2s;
+}
+
+input {
+  display: none;
+}
+
+/*  Dark mode  */
+input:checked + .slider {
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+input:checked + .slider::before {
+  background-color: #252a41;
+  transform: translateX(-22px);
+}

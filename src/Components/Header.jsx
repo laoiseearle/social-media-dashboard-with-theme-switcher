@@ -23,12 +23,14 @@ export const Header = () => {
 
         <div className="header-theme">
           <h3>Dark Mode</h3>
-          <input
-            className="theme-toggle"
-            type="checkbox"
-            onChange={handleThemeToggle}
-            checked={theme === 'dark'}
-          />
+          <label className="switch">
+            <input
+              type="checkbox"
+              onChange={handleThemeToggle}
+              checked={theme === 'dark'}
+            />
+            <span className="slider"></span>
+          </label>
         </div>
       </div>
     </header>
