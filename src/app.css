@@ -7,11 +7,6 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-
-.wrapper {
-  padding: 1.5em;
-}
-
 .theme-toggle {
   width: 30px;
   height: 30px;
