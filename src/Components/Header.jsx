@@ -1,26 +1,35 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../App';
+import { secondaryTextColor, headerColor } from '../theme';
+import './header.css';
 
 export const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   const handleThemeToggle = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
-  return (
-    <header>
-      <div className="header-info">
-        <h1>Social Media Dashboard</h1>
-        <h3>Total Followers: 23,0004</h3>
-      </div>
 
-      <div className="header-theme">
-        <h3>Dark Mode</h3>
-        <input
-          className="theme-toggle"
-          type="checkbox"
-          onChange={handleThemeToggle}
-          checked={theme === 'dark'}
-        />
+  const getTheme = name => (theme === 'dark' ? name.dark : name.light);
+
+  return (
+    <header style={getTheme(headerColor)}>
+      <div className="header-wrapper">
+        <div className="header-info">
+          <h1 style={getTheme(secondaryTextColor)}>Social Media Dashboard</h1>
+          <h3>Total Followers: 23,004</h3>
+        </div>
+
+        <hr style={getTheme(secondaryTextColor)} />
+
+        <div className="header-theme">
+          <h3>Dark Mode</h3>
+          <input
+            className="theme-toggle"
+            type="checkbox"
+            onChange={handleThemeToggle}
+            checked={theme === 'dark'}
+          />
+        </div>
       </div>
     </header>
   );

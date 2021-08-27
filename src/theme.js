@@ -1,3 +1,12 @@
+export const headerColor = {
+  light: {
+    backgroundColor: '#f5f7ff',
+  },
+  dark: {
+    backgroundColor: '#1f212e',
+  },
+};
+
 export const backgroundColor = {
   light: {
     backgroundColor: '#ffffff',
