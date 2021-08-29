@@ -1,19 +1,24 @@
 .overview {
   padding: 1.5em 0;
-  display: grid;
-  justify-content: center;
-  margin-top: -4vh;
+  /* margin-top: -4vh; */
+  width: 85vw;
+  /* padding-bottom: -2em; */
 }
 
 .overview-header {
-  margin-bottom: 1em;
+  margin: 0.3em 0 1.3em 0;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
+.overview-card-wrapper {
+  display: grid;
+  width: 85vw;
+}
+
 .overview-card {
   height: 125px;
-  width: 327px;
+  width: 100%;
   border-radius: 0.3em;
   padding: 1.7em 1.5em 1em 1.5em;
   margin-bottom: 1.1em;
@@ -52,4 +57,45 @@
 .percentage > img {
   height: 4px;
   padding-right: 0.3em;
+}
+
+@media only screen and (min-width: 550px) {
+  .overview-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .overview,
+  .overview-card-wrapper {
+    width: 80vw;
+  }
+  .overview-card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 1.5em;
+  }
+
+  .overview-header {
+    font-size: 1.2em;
+  }
+
+  .overview-card {
+    height: 110px;
+    padding: 1.5em 1.2em 0.8em 1.2em;
+  }
+
+  .overview-card-top > p {
+    font-size: 0.7em;
+    font-weight: 700;
+  }
+
+  .overview-card-top > img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .overview-card-bottom > h2 {
+    font-size: 1.6em;
+  }
 }

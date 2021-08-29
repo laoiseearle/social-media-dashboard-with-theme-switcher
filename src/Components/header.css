@@ -1,18 +1,25 @@
 header {
-  height: 35vh;
+  height: 34vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .header-wrapper {
-  padding: 2.5em 1.5em;
+  padding-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
 }
+
 h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   letter-spacing: 0.03em;
   padding-bottom: 0.3em;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 0.7em;
   letter-spacing: 0.03em;
 }
 
@@ -27,7 +34,10 @@ hr {
 .header-theme {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.header-theme h3 {
+  padding-top: 0.2em;
 }
 
 .switch {
@@ -76,4 +86,53 @@ input:checked + .slider {
 input:checked + .slider::before {
   background-color: #252a41;
   transform: translateX(-22px);
+}
+
+@media screen and (min-width: 375px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  hr {
+    display: none;
+  }
+
+  .header-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header-theme {
+    padding-top: 0.5em;
+  }
+
+  .header-theme h3 {
+    padding-right: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    height: 35vh;
+  }
+  .header-wrapper {
+    width: 80%;
+  }
+}
+
+/* Touchscreens with landscape */
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 1000px) {
+  header {
+    height: 40vh;
+  }
 }

@@ -15,37 +15,39 @@ export const Overview = () => {
         Overview - Today
       </h2>
 
-      {dailyOverview.map(item => (
-        <div
-          className="overview-card"
-          key={item.id}
-          style={getTheme(cardBackgroundColor)}
-        >
-          <div className="overview-card-top">
-            <p>{item.infoType}</p>
-            <img src={item.logo} alt="" />
-          </div>
+      <div className="overview-card-wrapper">
+        {dailyOverview.map(item => (
+          <div
+            className="overview-card"
+            key={item.id}
+            style={getTheme(cardBackgroundColor)}
+          >
+            <div className="overview-card-top">
+              <p>{item.infoType}</p>
+              <img src={item.logo} alt="" />
+            </div>
 
-          <div className="overview-card-bottom">
-            <h2 style={getTheme(secondaryTextColor)}>{item.count}</h2>
+            <div className="overview-card-bottom">
+              <h2 style={getTheme(secondaryTextColor)}>{item.count}</h2>
 
-            <div
-              className="percentage"
-              style={{ color: item.increasedChange ? '#1db489' : '#dc414c' }}
-            >
-              <img
-                src={
-                  item.increasedChange
-                    ? './images/icon-up.svg'
-                    : './images/icon-down.svg'
-                }
-                alt=""
-              />
-              <p>{item.dailyChange}</p>
+              <div
+                className="percentage"
+                style={{ color: item.increasedChange ? '#1db489' : '#dc414c' }}
+              >
+                <img
+                  src={
+                    item.increasedChange
+                      ? './images/icon-up.svg'
+                      : './images/icon-down.svg'
+                  }
+                  alt=""
+                />
+                <p>{item.dailyChange}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
