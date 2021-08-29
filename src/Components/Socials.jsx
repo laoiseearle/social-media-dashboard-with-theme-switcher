@@ -7,6 +7,14 @@ import './socials.css';
 export const Socials = () => {
   const { theme } = useContext(ThemeContext);
 
+  const borderStyle = x => {
+    if (x.borderGradient) {
+      return { backgroundImage: x.borderColor };
+    } else {
+      return { backgroundColor: x.borderColor };
+    }
+  };
+
   const getTheme = name => (theme === 'dark' ? name.dark : name.light);
 
   return (
@@ -17,6 +25,7 @@ export const Socials = () => {
           key={site.id}
           style={getTheme(cardBackgroundColor)}
         >
+          <div className="site-border" style={borderStyle(site)}></div>
           <div className="top-card">
             <img className="icon" src={site.logo} alt="" />
             <p>{site.username}</p>

@@ -6,6 +6,8 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '12',
     increasedChange: true,
+    borderColor: '#198ff5',
+    borderGradient: false,
     logo: './images/icon-facebook.svg',
   },
   {
@@ -15,6 +17,8 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '99',
     increasedChange: true,
+    borderColor: '#1ca0f2',
+    borderGradient: false,
     logo: './images/icon-twitter.svg',
   },
   {
@@ -24,6 +28,8 @@ export const socialSites = [
     subName: 'followers',
     dailyChange: '1099',
     increasedChange: true,
+    borderColor: 'linear-gradient(to right, #fdc468, #df4996)',
+    borderGradient: true,
     logo: './images/icon-instagram.svg',
   },
   {
@@ -33,6 +39,8 @@ export const socialSites = [
     subName: 'subscribers',
     dailyChange: '144',
     increasedChange: false,
+    borderColor: '#c4032a',
+    borderGradient: false,
     logo: './images/icon-youtube.svg',
   },
 ];
