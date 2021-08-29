@@ -1,4 +1,5 @@
 {
+  "homepage": "http://laoiseearle.github.io/social-media-dashboard-with-theme-switcher",
   "name": "social-media-dashboard-with-theme-switcher",
   "version": "1.0.0",
   "private": false,
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
